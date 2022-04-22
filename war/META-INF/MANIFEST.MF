@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: etf-webapp
+Target-Compatibility: 1.8
+Implementation-Version: 2.0.0-SNAPSHOT
+Built-By: carlospalma
+Source-Compatibility: 1.8
+Build-Host: carlospalma
+Implementation-Vendor-Id: de.interactive_instruments
+Build-Time: 20210423T1152
+Build-JDK: 1.8.0_201
+Implementation-Vendor: interactive instruments GmbH
+
