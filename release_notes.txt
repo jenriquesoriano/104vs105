@@ -1,21 +1,20 @@
 The version published at this time contains breaking and non-breaking changes.
 
 #### 🚀 New Features
-
-OGC API-Features:
-* [OGC API-Features](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/647)
+* [#727](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/727) INSPIRE data sets and data set series metadata for IACS - [#720](https://github.com/inspire-eu-validation/ets-repository/pull/720)
 
 #### 🐛 Bugfixes
 
-* [#565](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/565) etf.dependency.ids value updated - [#702](https://github.com/inspire-eu-validation/ets-repository/pull/702)
-* [#612](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/612) Accepted date and dateTime - [#693](https://github.com/inspire-eu-validation/ets-repository/pull/693)
-* [#626](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/626) BU.Building.default option style added - [#694](https://github.com/inspire-eu-validation/ets-repository/pull/694)
-* [#633](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/633) Update emptyName message - [#695](https://github.com/inspire-eu-validation/ets-repository/pull/695)
-* [#638](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/638) Check operatesOn/xlink:href instead of operatesOn/uuidref - [#700](https://github.com/inspire-eu-validation/ets-repository/pull/700)
-* [#643](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/643) Created loop to avoid defining messages - [#696](https://github.com/inspire-eu-validation/ets-repository/pull/696)
-* [#646](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/646) Update StatisticalTesselation to StatisticalTessellation - [#697](https://github.com/inspire-eu-validation/ets-repository/pull/697)
-* [#649](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/649) Update mr-as.b.1: specification test - [#698](https://github.com/inspire-eu-validation/ets-repository/pull/698)
-* [#669](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/669) Add 5013, 5014 and 5015 EPSG codes - [#699](https://github.com/inspire-eu-validation/ets-repository/pull/699)
+* [#327](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/327) Add 'nor' language to c.5 - [#713](https://github.com/inspire-eu-validation/ets-repository/pull/713)
+* [#567](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/567) common-req C.5 and datasets-and-series 1.6 codelists updated - [#714](https://github.com/inspire-eu-validation/ets-repository/pull/714)
+* [#625](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/625) ge-ia.b.2 and ge-ia.b.3 missing element and wrong multiplicity conditions removed - [#715](https://github.com/inspire-eu-validation/ets-repository/pull/715)
+* [#659](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/659) Removed multiplicity check for so:soilDerivedObjectObservation - [#712](https://github.com/inspire-eu-validation/ets-repository/pull/712)
+* [#686](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/686) New certificate added
+* [#688](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/688) C.18 otherConstraints Anchor condition updated - [#716](https://github.com/inspire-eu-validation/ets-repository/pull/716)
+* [#704](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/704) lc-as.a.1 updated - [#717](https://github.com/inspire-eu-validation/ets-repository/pull/717)
+* [#706](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/706) common req C.5 ice language code added - [#718](https://github.com/inspire-eu-validation/ets-repository/pull/718)
+* [#712](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/712) bu-3d-as.a.3 and bu-3d-as.a.4 checks each buildingpart of bu-base:parts - [#719](https://github.com/inspire-eu-validation/ets-repository/pull/719)
+
 
 
 #### Deployment instructions
@@ -25,7 +24,7 @@ The section containing the deployment process using Docker image and troubleshoo
 ```CMD
 docker login docker.pkg.github.com 
 #Provide Github credentials
-docker run --name inspire-validator -d -p 8090:8090 -v ~/etf:/etf docker.pkg.github.com/inspire-mif/helpdesk-validator/inspire-validator:2022.0
+docker run --name inspire-validator -d -p 8090:8090 -v ~/etf:/etf docker.pkg.github.com/inspire-mif/helpdesk-validator/inspire-validator:2022.1
 #Launches a container with the image, exposing the UI in port 8090 through the same port in the host machine, and uses a volume in the local file system, on the directory ~/etf
 ```
 ##### Modifying the Docker image
@@ -60,4 +59,4 @@ These can also be set up in the Dockerfile, using the keyword ENV
 
 For more information please check out https://docs.docker.com/network/proxy
 
-For further configuration, please download the file inspire-validator-2022.0.zip and follow the instructions in the README.md file inside the .zip file.
+For further configuration, please download the file inspire-validator-2022.1.zip and follow the instructions in the README.md file inside the .zip file.
